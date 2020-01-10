@@ -4,10 +4,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+@WebServlet(
+     name = "AppServlet",
+     urlPatterns = {"/welcome"}
+)
 public class App extends HttpServlet
 {
      //Instance variable used for counting hits on this servlet
