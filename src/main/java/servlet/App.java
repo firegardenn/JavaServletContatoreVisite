@@ -1,4 +1,4 @@
-//package app;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,7 +16,7 @@ public class App extends HttpServlet
 {
      //Instance variable used for counting hits on this servlet
      private static final long serialVersionUID = -3967314453512919811L;
-     private int iHitCounter;
+     //private int iHitCounter;
 
      //init method just initializes the hitCounter to zero
      public void init() throws ServletException
