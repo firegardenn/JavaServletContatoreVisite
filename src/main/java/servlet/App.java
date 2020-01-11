@@ -30,7 +30,7 @@ public class App extends HttpServlet
           PrintWriter out =  response.getWriter();
           
           if(session.getAttribute("Counter")==null){
-               session.setAttribute("Counter",((int)session.getAttribute("Counter"))+1);
+               session.setAttribute("Counter", 1);
                out.println("<h3>Benvenuto !</h3>");
                out.println("E' la prima volta che visiti questo sito");
           }
