@@ -33,13 +33,13 @@ public class App extends HttpServlet
                session.setAttribute("Counter", 1);
                out.println("<h3>Benvenuto !</h3>");
                out.println("E' la prima volta che visiti questo sito");
-               session.setAttribute("Counter",((int)session.getAttribute("Counter"))+1);
+               session.setAttribute("Counter",(((int)session.getAttribute("Counter"))+1));
           }
           else{
-               session.setAttribute("Counter",((int)session.getAttribute("Counter"))+1);
+               session.setAttribute("Counter",(((int)session.getAttribute("Counter"))+1));
                out.println("<form>");
                out.println("<h3>Benvenuto !</h3>");
-               out.println("Hai visitato questo sito: "+ (++iHitCounter));
+               out.println("Hai visitato questo sito: "+ session.getAttribute("Counter"));
                out.println("</form>");
           }
           
